@@ -289,10 +289,14 @@ a.button{
 */
 }
 
+
 .offer-container {
     position: relative;
-    height: 767px;
+/*    height: auto;*/
     margin-top: 113px;
+    height: 529px;
+    background-color: #222224;
+    box-sizing: border-box;
 }
 
 .offer {
@@ -312,4 +316,88 @@ a.button{
 
 .bottom-right-text {
     bottom: 433px;
+}
+
+.offer-promo-sticker {
+    color: #ffffff;
+    font-size: 54px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.offer-banner-text-up {
+    letter-spacing: 1.5px;    
+}
+
+.offer-banner-text-down {
+    font-size: 32px;
+    letter-spacing: 0.9px;
+}
+
+.offer-banner {
+/*
+    position:absolute;
+    top:146px;
+    left:39px;
+*/
+    height: 100%;
+    justify-content: space-between;
+}
+
+.offer-description {
+    width: 373px;
+/*    height: 529px;*/
+    height: 100%;
+    background-color: #222224;
+    box-sizing: border-box;
+}
+
+.offer-banner-text {
+    position:absolute;
+    top:146px;
+    left:39px;
+}
+
+.offer-img {
+    height: 100%;
+}
+
+.offer-description-block {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    padding-left: 36px;
+    padding-top: 48px;
+    box-sizing: border-box;
+    
+}
+
+.offer-description-block-text {
+    color: #fbfbfb;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.35px;
+    width: 219px;
+    margin-left: 33px;
+}
+
+.offer-description-block-text-header {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 17px;
+}
+
+.offer-description-block-img1 {
+/*    margin-top: -118px;*/
+    height: 35px;
+}
+
+.offer-description-block-img2 {
+    height: 40px;
+}
+
+.offer-description-block-img3 {
+    height: 35px;
 }
