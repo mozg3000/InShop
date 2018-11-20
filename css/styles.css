@@ -125,21 +125,11 @@ a.button{
     margin-top: 98px;
 }
 .categories-left{
-/*    height: 100%;*/
     width: 560px;
-/*    position: relative;*/
-/*
-    top: 0;
-    left:0;
-*/
-    box-sizing: border-box;
+    margin-right: 20px;
 }
 .top-left{
-/*
-    position: relative;
-    top: 0;
-    left:0;
-*/
+    margin-bottom: 20px;
 }
 .bottom-left{
 /*
@@ -159,22 +149,13 @@ a.button{
 
     height: 100%;
     width: 560px;
-/*
-    position: relative;
-    top: 0;
-    left:0;
-*/
     box-sizing: border-box;
 }
 .top-right{
-    position: absolute;
-    top: 0;
-    right:0;
+    margin-bottom: 20px;
 }
 .bottom-right{
-    position: absolute;
-    bottom: 0;
-    right:0;
+
 }
 .top-right-img{
     height: 261px;
@@ -187,7 +168,7 @@ a.button{
 }
 
 .top-left-text {
-/*    vertical-align: middle;*/
+    top: 26px;
 }
 
 .promo-sticker-text-down {
@@ -196,7 +177,6 @@ a.button{
 }
 .promo-sticker{
     position: absolute;
-    top: 26px;
     color: #222222;
     font-size: 18px;
     font-weight: 400;
@@ -320,4 +300,16 @@ a.button{
 
 .features {
     box-sizing: border-box;
+}
+
+.bottom-left-text {
+    bottom: 154px;
+}
+
+.top-right-text {
+    top: 26px;
+}
+
+.bottom-right-text {
+    bottom: 433px;
 }
