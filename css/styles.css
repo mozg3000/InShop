@@ -401,3 +401,42 @@ a.button{
 .offer-description-block-img3 {
     height: 35px;
 }
+
+.features-foto-block-shadow {
+    background-color: darkgray;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 280px;
+    width: 261px;
+    opacity: 0.8;
+/*    display: none;*/
+    z-index: 1;
+}
+
+.features-foto-block {
+    position: relative;
+}
+
+.features-foto-block-shadow-button {
+    position: relative;
+    top: 94px;
+    left: 50px;
+    border: 2px solid #ffffff;
+    width: 140px;
+    height: 29px;
+    padding: 10px;
+    justify-content: center;
+/*    box-sizing: border-box;*/
+}
+
+.features-foto-block-shadow-button-text {
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.features-foto-block-shadow-button-img {
+    margin-right: 8px;
+}
