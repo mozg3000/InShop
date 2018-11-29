@@ -1,0 +1,62 @@
+@import "_styles.css"
+
+#cart-chb-c
+  display: none
+
+#cart-chb-c:checked + .drop-box-cart
+  display: block
+
+.features-button-link i
+  margin-left: 15px
+
+.current-page
+  border-bottom: 3px solid #f16d7f
+#browse-chb
+  display: none
+#browse-chb:checked+.drop-box-browse
+  display: block
+.browse-lbl
+    text-transform: none
+    height: 38px
+    line-height: 38px
+    padding: 0 16px
+    box-sizing: border-box
+    color: #222222
+    border-radius: 3px 0 0 3px
+    border: 1px solid #e6e6e6
+    background-color: #cdcdcc
+    background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%)
+    text-align: justify
+
+.wide-filter
+  padding: 22px 0 41px 17px
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 37px
+  display: none
+  &>nav>ul
+    list-style: none
+  & a
+    color: #6f6e6e
+    font-size: 14px
+    font-weight: 400
+.menu-list 
+  height: 100%
+  position: relative
+  display: block
+  &:hover .drop-box
+    display: flex
+.menu-list-gr
+  //position: relative
+  display: block
+  &:hover
+    //margin-bottom: 506px
+  //&:hover .wide-filter
+  //  display: block
+#gr
+  display: none
+  &:checked + .wide-filter
+    display: block
+  &:checked ~ .menu-list-gr
+    margin-bottom: 506px
