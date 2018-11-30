@@ -3,8 +3,16 @@
 #cart-chb-c
   display: none
 
-#cart-chb-c:checked + .drop-box-cart
-  display: block
+#cart-chb-c:checked
+  & +label #cart-chb-svg
+    fill: #f16d7f
+  & + label+.drop-box-cart
+    display: block
+.cart-chb-c-lbl
+  padding: 10px
+  box-sizing: border-box
+  &:hover #cart-chb-svg
+    fill: #f16d7f
 
 .features-button-link i
   margin-left: 15px
@@ -15,6 +23,7 @@
   display: none
 #browse-chb:checked+.drop-box-browse
   display: block
+
 .browse-lbl
     text-transform: none
     height: 38px
@@ -41,22 +50,88 @@
     color: #6f6e6e
     font-size: 14px
     font-weight: 400
-.menu-list 
+
+.menu-list
   height: 100%
   position: relative
   display: block
   &:hover .drop-box
     display: flex
-.menu-list-gr
-  //position: relative
-  display: block
-  &:hover
-    //margin-bottom: 506px
-  //&:hover .wide-filter
-  //  display: block
-#gr
+
+.fl-gr
   display: none
-  &:checked + .wide-filter
+  &:checked +.fl-lbl //.fl-lbl
+    color: #f16d7f
+    font-weight: 700
+  &:checked +.fl-lbl +.wide-filter
     display: block
-  &:checked ~ .menu-list-gr
-    margin-bottom: 506px
+
+.main-filters 
+  width: 243px
+  color: #6f6e6e
+  font-weight: 700
+  font-size: 14px
+  text-transform: uppercase
+  position: relative
+  margin-right: 50px
+
+.fl-lbl
+  display: block
+  border-bottom: 1px solid #ebebeb
+  border-left: 5px solid #ef5b70
+  height: 37px
+  margin-bottom: 18px
+  line-height: 37px
+  padding-left: 11px
+.current-page-men
+  border-bottom: 3px solid #f16d7f
+.add-position
+  position: absolute
+  top: 94px
+  width: 263px
+  display: none
+  justify-content: center
+.add, .add-prod, .add-prod-c,#add-prod-svg,#cart-add-svg
+   padding: 14px
+   border: 1px solid #ffffff
+   color: #ffffff
+   fill: #ffffff
+   display: block
+   border-radius: 3px
+   &:hover
+    box-shadow: 0 0 5px #fff
+.add-prod
+  padding: 8px 24px
+.add-prod-c
+ padding: 8px 17px
+.cart-chb-c-lbl
+  margin-right: 26px
+.product-flex:hover .add-position
+  display: flex
+.product-flex:hover .add-position-prod
+  display: flex
+.add-position-prod
+  position: absolute
+  top: 94px
+  width: 263px
+  display: none
+  flex-direction: column
+  align-items: center
+  box-sizing: border-box
+  justify-content: space-between
+.prod-like
+ display: flex
+ justify-content: space-between
+ width: 142px
+ height: auto
+ margin-top: 8px
+ box-sizing: border-box
+ text-align: center
+
+//#cart-add-svg
+  //fill: #fff
+.add
+  vertical-align: middle
+  line-height: 22px
+  & svg
+   margin-right: 8px
