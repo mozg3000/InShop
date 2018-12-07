@@ -9,13 +9,13 @@
   z-index: 1;
   height: 40px;
   width: 40px;
+  transition: opacity 100ms ease-in, fill 100ms ease-in;
 }
 .cart-chb-c-lbl:hover #cart-chb-svg {
   fill: #f16d7f;
 }
 .cart-chb-c-lbl:hover .drop-box-cart {
   display: block;
-  transition: opacity 1s ease-in;
   opacity: 1;
   width: auto;
   height: auto;
@@ -797,7 +797,7 @@
 }
 .cart-undo-cont button:active {
   transition: transform 0.1s;
-  transform: rotate(90deg) scale(0.9);
+  transform: rotate(180deg) scale(0.9);
 }
 .cart-undo-cont button:focus {
   outline: 0 !important;

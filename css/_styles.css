@@ -1416,7 +1416,7 @@ margin-top:  60px;
     border: 1px solid #eaeaea;
     top:75px;
     left: -15px;
-    display: none;
+    /*display: none;*/
     opacity: 0;
     width: 0;
     height: 0;
