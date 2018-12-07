@@ -10,7 +10,7 @@
 <header class="header">
     <div class="container header-flex">
         <div class="header-left header-flex">
-            <a href="index.html" class="logo header-flex"><img class="logo-img" src="../img/logo.png" alt="" >
+            <a href="../index.html" class="logo header-flex"><img class="logo-img" src="../img/logo.png" alt="" >
                 <p class="header-text">bran<span class="pink">D</span></p></a>
             <form action="#" class="form header-flex">
                 <div>
@@ -38,7 +38,7 @@
                             <li><a class="drop-link"href="#">Accessories </a></li>
                         </ul>
                     </div>
-                    <div class="drop-flex">
+                    <div class="drop-flex-browse">
                         <h3 class="drop-heading">
                             men
                         </h3>
@@ -77,72 +77,81 @@
                         </g>
                     </g>
                 </svg>
+                <div class="drop-box-cart drop-box-account  drop-box-romb-cart">
+                    <div class="drop-flex-cart">
+                        <a href="#">
+                            <img class="cart-img-acc" src="../img/cart/img1.jpg" alt="">
+                        </a>
+                        <div class="drop-block">
+
+                            <h3 class="drop-heading-cart">
+                                <a href="#">
+                                    Rebox Zane
+                                </a>
+                            </h3>
+                            <p class="cart-p">
+                                <i class="cart-star fas fa-star"></i>
+                                <i class="cart-star fas fa-star"></i>
+                                <i class="cart-star fas fa-star"></i>
+                                <i class="cart-star fas fa-star"></i>
+                                <i class="cart-star fas fa-star-half-alt"></i>
+                            </p>
+                            <p class="cart-price pink">
+                                1 x $250
+                            </p>
+
+                        </div>
+                        <div class="cart-undo-cont">
+                            <button>
+                                <i class="cart-undo fas fa-times-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="drop-flex-cart">
+                        <a href="#">
+                            <img src="../img/cart/img2.jpg" alt="">
+                        </a>
+                        <div class="drop-block">
+
+                            <h3 class="drop-heading-cart">
+                                <a href="#">
+                                    Rebox Zane
+                                </a>
+                            </h3>
+                            <p class="cart-p">
+                                <i class="cart-star fas fa-star"></i>
+                                <i class="cart-star fas fa-star"></i>
+                                <i class="cart-star fas fa-star"></i>
+                                <i class="cart-star fas fa-star"></i>
+                                <i class="cart-star fas fa-star-half-alt"></i>
+                            </p>
+                            <p class="cart-price pink">
+                                1 x $250
+                            </p>
+
+                        </div>
+                        <div class="cart-undo-cont">
+                            <button>
+                                <i class="cart-undo fas fa-times-circle"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="cart-price-total-cont">
+                        <p class="cart-price-total">
+                            TOTAL            <span>$500.00</span>
+                        </p>
+                    </div>
+                    <a href="#" class="cart-checkout pink">
+                        Checkout
+                    </a>
+                    <a href="#" class="cart-gotocart pink">
+                        Go to cart
+                    </a>
+                </div>
             </label>
-            <div class="drop-box-cart drop-box-account  drop-box-romb-cart">
-                <div class="drop-flex-cart">
-                    <a href="#">
-                        <img class="cart-img-acc" src="../img/cart/img1.jpg" alt="">
-                    </a>
-                    <div class="drop-block">
 
-                        <h3 class="drop-heading-cart">
-                            Rebox Zane
-                        </h3>
-                        <p class="cart-p">
-                            <i class="cart-star fas fa-star"></i>
-                            <i class="cart-star fas fa-star"></i>
-                            <i class="cart-star fas fa-star"></i>
-                            <i class="cart-star fas fa-star"></i>
-                            <i class="cart-star fas fa-star-half-alt"></i>
-                        </p>
-                        <p class="cart-price pink">
-                            1 x $250
-                        </p>
-
-                    </div>
-                    <div class="cart-undo-cont">
-                        <i class="cart-undo fas fa-times-circle"></i>
-                    </div>
-                </div>
-                <div class="drop-flex-cart">
-                    <a href="#">
-                        <img src="../img/cart/img2.jpg" alt="">
-                    </a>
-                    <div class="drop-block">
-
-                        <h3 class="drop-heading-cart">
-                            Rebox Zane
-                        </h3>
-                        <p class="cart-p">
-                            <i class="cart-star fas fa-star"></i>
-                            <i class="cart-star fas fa-star"></i>
-                            <i class="cart-star fas fa-star"></i>
-                            <i class="cart-star fas fa-star"></i>
-                            <i class="cart-star fas fa-star-half-alt"></i>
-                        </p>
-                        <p class="cart-price pink">
-                            1 x $250
-                        </p>
-
-                    </div>
-                    <div class="cart-undo-cont">
-                        <i class="cart-undo fas fa-times-circle"></i>
-                    </div>
-
-                </div>
-                <div class="cart-price-total-cont">
-                    <p class="cart-price-total">
-                        TOTAL            <span>$500.00</span>
-                    </p>
-                </div>
-                <a href="#" class="cart-checkout pink">
-                    Checkout
-                </a>
-                <a href="#" class="cart-gotocart pink">
-                    Go to cart
-                </a>
-            </div>
-            <a href="#" class="button">
+            <a href="#" class="button bover-w">
                 My Account <i class="acc-tr fas fa-caret-down"></i>
             </a>
         </div>
@@ -632,7 +641,8 @@
                 </label>
             </div>
         </div>
-        <a href="#" class="single-add">
+        <!--<a href="#" class="single-add">-->
+        <button class="single-add bover-w">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                  width="23" height="22" viewBox="0 0 32 29">
                 <defs>
@@ -653,7 +663,9 @@
             <span>
                 Add to Cart
             </span>
-        </a>
+        </button>
+
+        <!--</a>-->
     </section>
 </main>
 <section class="like-container">
@@ -850,8 +862,12 @@
                     </p>
                 </div>
                 <form action="#" class="subscribe-right-block-form header-flex">
-                    <input type="email" validate placeholder="Enter Your Email" class="subscribe-right-block-form-input">
-                    <button class="subscribe-right-block-form-button ">Subscribe</button>
+                    <input type="email" validate placeholder="Enter Your Email"
+                           class="subscribe-right-block-form-input">
+                    <button class="subscribe-right-block-form-button
+                                        bover-b">
+                        Subscribe
+                    </button>
                 </form>
             </aside>
         </div>
@@ -925,6 +941,8 @@
             <p>
                 © 2017  Brand  All Rights Reserved.
             </p>
+            <div>
+            </div>
             <div class="icons">
                 <a href="#" class="icon">
                     <i class="fab fa-facebook-f"></i>

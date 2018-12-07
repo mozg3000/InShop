@@ -3,29 +3,22 @@
 #cart-chb-c
   display: none
 
-//#cart-chb-c:checked
-//  & +label #cart-chb-svg
-//    fill: #f16d7f
-//  & + label+.drop-box-cart
-//    display: block
 .cart-chb-c-lbl
-  //padding: 10px 10px 20px 20px
   margin-top: 10px
-  //box-sizing: border-box
   margin-right: 16px
   z-index: 1
-  //&:hover #cart-chb-svg
-  //  fill: #f16d7f
-  height: 50px
+  height: 40px
   width: 40px
-  &:hover +.drop-box-cart
+  &:hover #cart-chb-svg
+    fill: #f16d7f
+  &:hover .drop-box-cart
     display: block
-    transition: opacity 0.32s ease-in
+    transition: opacity 1s ease-in
     opacity: 1
     width: auto
     height: auto
     padding: 20px
-  &:hover +.drop-box-account:before
+  &:hover .drop-box-account:before
     display: block
 //#cart-chb-svg
 //  padding: 20px
@@ -120,13 +113,16 @@
   margin-right: 50px
 
 .fl-lbl
-  display: block
+  display: flex
+  justify-content: space-between
   border-bottom: 1px solid #ebebeb
   border-left: 5px solid #ef5b70
-  height: 37px
+  //height: 37px
   margin-bottom: 18px
   line-height: 37px
   padding-left: 11px
+  & .fas
+    margin: auto 0
 .current-page-men
   border-bottom: 3px solid #f16d7f
 .add-position
@@ -218,7 +214,7 @@
   display: flex
   border-bottom: 1px solid #eaeaea
   padding: 17px 0
-  & p,input
+  & p,input,button
     margin: auto auto
   & img
     margin-right: 21px
@@ -275,6 +271,11 @@
     margin-bottom: 18px
     font-weight: 400
     text-transform: uppercase
+    & a
+      color: #656565
+      font-size: 13px
+      font-weight: 400
+      line-height: 20px
   & p
     color: #575757
     font-weight: 400
@@ -308,6 +309,9 @@
   border: 1px solid #eaeaea
   background-color: #ffffff
   padding: 20px 40px
+  text-transform: uppercase
+  font-size: 14px
+  font-weight: 700
 .customer-action
   display: flex
   justify-content: space-between
@@ -345,10 +349,10 @@
   width: 30%
   height: auto
   box-sizing: border-box
-  & a
+  & a,button
     padding: 12px 15px
     width: auto //100px
-    line-height: 42px
+    //line-height: 42px
     border: 1px solid #eaeaea
     background-color: #ffffff
     color: #4a4a4a
@@ -357,6 +361,8 @@
     text-transform: uppercase
     //display: block
     margin: auto 0
+    box-sizing: border-box
+
 #cities-list-chb
   display: none
 .cities-list>div
@@ -369,10 +375,10 @@
     font-size: 14px
     font-weight: 300
     margin-bottom: 24px
-  & a
+  & a,button
     padding: 12px 15px
     width: auto //100px
-    line-height: 42px
+    //line-height: 42px
     border: 1px solid #eaeaea
     background-color: #ffffff
     color: #4a4a4a
@@ -448,17 +454,38 @@
   color: #ef5b70
 
 .view-all-button
-  //color: #ef5b70
   font-size: 16px
   font-weight: bold
   line-height: 26px
-  padding: 18px 39px
   border-radius: 3px
   border: 1px solid #ef5b70
   background-color: #ffffff
   box-sizing: border-box
+  display: flex
+  justify-content: center
+  &:hover
+    box-shadow: 0.2px -0.2px 0.21px 0.26px #f17d7f
+  &:active
+    box-shadow: none
+    transform: scale(0.98)
+    transition: scale 0.2s ease-in
   & a
+    padding: 18px 39px
     color: #ef5b70
+    background-color: #fff
+  & a:hover
+    //box-shadow: 0.2px -0.2px 0.21px 0.26px #f17d7f
+    //border: 1px solid #004040
+    transition: box-shadow 0.052s ease-in
+    filter: brightness(98%)
+    //transition: box-shadow 0.052s ease-in
+  & a:active
+      transform: scale(0.98)
+      transition: scale 0.2s ease-in
+      //background-color: #f28585
+      filter: brightness(96%)
+      box-shadow: none
+
 .single-banner-container
   border: 1px solid #eaeaea
   background-color: #f7f7f7
@@ -620,6 +647,7 @@
   border: 1px solid #ef5b70
   margin-top: 28px
   line-height: 25px
+  background-color: #fff
   & span
     margin-left: 30px
 .like-container
@@ -642,8 +670,8 @@
   border: none
   background-color: #fff
   &:hover
-    //transition: transform 0.45s ease-out
     //transform: scale(0.9)
+    transition: color 0.45s ease-in
   &:hover .cart-undo
     color: red
     //box-shadow: 0 0 3px 5px #7a7a7a
@@ -757,8 +785,10 @@
       line-height: 20px
     & input:last-of-type + br+p
       color: #ff0d0d
-
+.subscribe-right-block-form-input
+  outline: 0 !important
 .bover-b
+  outline: 0!important
   &:hover
     box-shadow: 0.2px -0.2px 0.1px 0.6px #006363
     border: 1px solid #004040
@@ -772,18 +802,30 @@
     border: 0.1px solid #6e3535
 .bover-w
   &:hover
-    box-shadow: 0.2px -0.2px 0.1px 0.6px #00b2b2
-    border: 1px solid #004040
+    box-shadow: 0.2px -0.2px 0.1px 0.6px #f17d7f
+    //border: 1px solid #004040
     transition: box-shadow 0.052s ease-in
+    filter: brightness(98%)
     //transition: box-shadow 0.052s ease-in
     &:active
       transform: scale(0.998)
       transition: scale 0.2s ease-in
-      background-color: #f28585
+      //background-color: #f28585
+      filter: brightness(96%)
       box-shadow: none
-      border: 0.1px solid #6e3535
+      //border: 0.1px solid #6e3535
 
 .icon:hover:not(.inactive)
   & .fab
     font-size: large
+.icon:active:not(.inactive)
+  transition: scale 0.2s, brightness 0.2s
+  transform: scale(0.9)
+  filter: brightness(90%)
 
+.drop-heading-cart a
+  color: #222222
+  font-size: 12px
+  width: 84px
+  font-weight: 700
+  text-transform: uppercase

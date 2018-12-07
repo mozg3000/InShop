@@ -7,18 +7,21 @@
   margin-top: 10px;
   margin-right: 16px;
   z-index: 1;
-  height: 50px;
+  height: 40px;
   width: 40px;
 }
-.cart-chb-c-lbl:hover + .drop-box-cart {
+.cart-chb-c-lbl:hover #cart-chb-svg {
+  fill: #f16d7f;
+}
+.cart-chb-c-lbl:hover .drop-box-cart {
   display: block;
-  transition: opacity 0.32s ease-in;
+  transition: opacity 1s ease-in;
   opacity: 1;
   width: auto;
   height: auto;
   padding: 20px;
 }
-.cart-chb-c-lbl:hover + .drop-box-account:before {
+.cart-chb-c-lbl:hover .drop-box-account:before {
   display: block;
 }
 
@@ -120,13 +123,16 @@
 }
 
 .fl-lbl {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   border-bottom: 1px solid #ebebeb;
   border-left: 5px solid #ef5b70;
-  height: 37px;
   margin-bottom: 18px;
   line-height: 37px;
   padding-left: 11px;
+}
+.fl-lbl .fas {
+  margin: auto 0;
 }
 
 .current-page-men {
@@ -248,7 +254,7 @@
   border-bottom: 1px solid #eaeaea;
   padding: 17px 0;
 }
-.cart-item p, .cart-item input {
+.cart-item p, .cart-item input, .cart-item button {
   margin: auto auto;
 }
 .cart-item img {
@@ -297,6 +303,12 @@
   font-weight: 400;
   text-transform: uppercase;
 }
+.product-box h3 a {
+  color: #656565;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+}
 .product-box p {
   color: #575757;
   font-weight: 400;
@@ -342,6 +354,9 @@
   border: 1px solid #eaeaea;
   background-color: #ffffff;
   padding: 20px 40px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .customer-action {
@@ -388,10 +403,9 @@
   height: auto;
   box-sizing: border-box;
 }
-.shipping-deal a {
+.shipping-deal a, .shipping-deal button {
   padding: 12px 15px;
   width: auto;
-  line-height: 42px;
   border: 1px solid #eaeaea;
   background-color: #ffffff;
   color: #4a4a4a;
@@ -399,6 +413,7 @@
   font-weight: 700;
   text-transform: uppercase;
   margin: auto 0;
+  box-sizing: border-box;
 }
 
 #cities-list-chb {
@@ -419,10 +434,9 @@
   font-weight: 300;
   margin-bottom: 24px;
 }
-.coupon-discount a {
+.coupon-discount a, .coupon-discount button {
   padding: 12px 15px;
   width: auto;
-  line-height: 42px;
   border: 1px solid #eaeaea;
   background-color: #ffffff;
   color: #4a4a4a;
@@ -523,14 +537,35 @@
   font-size: 16px;
   font-weight: bold;
   line-height: 26px;
-  padding: 18px 39px;
   border-radius: 3px;
   border: 1px solid #ef5b70;
   background-color: #ffffff;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+.view-all-button:hover {
+  box-shadow: 0.2px -0.2px 0.21px 0.26px #f17d7f;
+}
+.view-all-button:active {
+  box-shadow: none;
+  transform: scale(0.98);
+  transition: scale 0.2s ease-in;
 }
 .view-all-button a {
+  padding: 18px 39px;
   color: #ef5b70;
+  background-color: #fff;
+}
+.view-all-button a:hover {
+  transition: box-shadow 0.052s ease-in;
+  filter: brightness(98%);
+}
+.view-all-button a:active {
+  transform: scale(0.98);
+  transition: scale 0.2s ease-in;
+  filter: brightness(96%);
+  box-shadow: none;
 }
 
 .single-banner-container {
@@ -724,6 +759,7 @@
   border: 1px solid #ef5b70;
   margin-top: 28px;
   line-height: 25px;
+  background-color: #fff;
 }
 .single-add span {
   margin-left: 30px;
@@ -752,6 +788,9 @@
 .cart-undo-cont button {
   border: none;
   background-color: #fff;
+}
+.cart-undo-cont button:hover {
+  transition: color 0.45s ease-in;
 }
 .cart-undo-cont button:hover .cart-undo {
   color: red;
@@ -887,6 +926,13 @@
   color: #ff0d0d;
 }
 
+.subscribe-right-block-form-input {
+  outline: 0 !important;
+}
+
+.bover-b {
+  outline: 0 !important;
+}
 .bover-b:hover {
   box-shadow: 0.2px -0.2px 0.1px 0.6px #006363;
   border: 1px solid #004040;
@@ -901,20 +947,33 @@
 }
 
 .bover-w:hover {
-  box-shadow: 0.2px -0.2px 0.1px 0.6px #00b2b2;
-  border: 1px solid #004040;
+  box-shadow: 0.2px -0.2px 0.1px 0.6px #f17d7f;
   transition: box-shadow 0.052s ease-in;
+  filter: brightness(98%);
 }
 .bover-w:hover:active {
   transform: scale(0.998);
   transition: scale 0.2s ease-in;
-  background-color: #f28585;
+  filter: brightness(96%);
   box-shadow: none;
-  border: 0.1px solid #6e3535;
 }
 
 .icon:hover:not(.inactive) .fab {
   font-size: large;
+}
+
+.icon:active:not(.inactive) {
+  transition: scale 0.2s, brightness 0.2s;
+  transform: scale(0.9);
+  filter: brightness(90%);
+}
+
+.drop-heading-cart a {
+  color: #222222;
+  font-size: 12px;
+  width: 84px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=styles.css.map */
