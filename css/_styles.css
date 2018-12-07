@@ -799,12 +799,14 @@ margin-top:  60px;
     width:263px;
     position: relative;
     margin-bottom: 60px;
+    transition: transform 5s ease-in-out, box-shadow 1s ease-in;
 }
 /*.product-flex:hover .add-position{*/
     /*display:flex;*/
 /*}*/
 .product-flex:hover{
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.16);
+    transform: scale(1.05)
 }
 .product-img{
     margin-bottom: 20px;
@@ -815,6 +817,7 @@ margin-top:  60px;
 
 .product-img {
     width:100%;
+    transition: filter 0.4s ease-out;
 }
 
 /*.add-position {*/
@@ -1197,10 +1200,14 @@ margin-top:  60px;
     background-color: #fff;
     padding: 20px;
     border: 1px solid #e6e6e6;
-    display: none;
+    /*display: none;*/
+    opacity: 0;
+    width: 0;
+    height: 0;
     top:49px;
     left: -5px;
-    z-index: 1;
+    z-index: -1;
+    /*transition: opacity 1s ease-in;*/
 }
 
 
@@ -1295,15 +1302,18 @@ margin-top:  60px;
     display: block;
     color: #b2b2b2;
     margin-left: 8px;
+    transition: all 0.5s;
 }
 .icon:first-child {
     margin-left: 0px;
 }
-.icon:hover{
+.icon:hover:not(.inactive){
     background-color: #f16d7f;
     color: #f7f7f8;
 }
-
+.icon:active {
+    transform: scale(0.9);
+}
 .inactive {
     background-color: #ccc;
 }
@@ -1324,15 +1334,20 @@ margin-top:  60px;
     position: absolute;
     border-radius: 5px;
     background-color: #fff;
-    padding: 20px;
-    border: 1px solid #e6e6e6;
-    display: none;
+    /*padding: 20px;*/
+    /*border: 1px solid #e6e6e6;*/
+    /*display: none;*/
     top:35px;
     left: 0px;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    transition: opacity 0.4s ease-in;
 }
 
 .drop-flex-browse {
-    width: 262px;
+    /*width: 262px;*/
+    /*width: 0;*/
     margin-bottom: 30px;
 }
 .drop-flex-browse:last-of-type {
@@ -1392,25 +1407,29 @@ margin-top:  60px;
     
 }
 
-
 .drop-box-cart {
     border-radius: 5px;
     background-color: #ffffff;
-    width: 262px;
-    height: auto;
-    padding: 20px;
+    /*width: 0;*/
+    /*width: 262px;*/
+    /*height: auto;*/
+    /*padding: 20px;*/
     box-sizing: border-box;
     z-index: 1;
     position: absolute;
-    /*top:70px;*/
     border: 1px solid #eaeaea;
-    top:55px;
-    left: -5px;
-    display: none;    
+    top:45px;
+    left: 5px;
+    display: none;
+    /*opacity: 0;*/
+    /*width: 0;*/
+    /*height: 0;*/
+
 }
 
 .header-right {
     position: relative;
+    height: 100px;
 }
 
 .drop-flex-cart {
@@ -1507,7 +1526,8 @@ margin-top:  60px;
 
 .drop-box-account:before {
     content: '';
-    display: block;
+    display: none;
+    /*display: block;*/
     width: 12px;
     height: 12px;
     background-color: #fff;
@@ -1577,15 +1597,24 @@ margin-top:  60px;
     position: absolute;
     border-radius: 5px;
     background-color: #fff;
-    padding: 20px;
+    /*padding: 20px;*/
     border: 1px solid #e6e6e6;
-    display: none;
+    /*display: none;*/
+    opacity: 0;
+    width: 0;
+    height: 0;
     top:49px;
     left: -105px;
-    z-index: 1;
+    z-index: -1;
 }
 .menu-list:hover .drop-box-kids{
     display: flex;
+    transition: opacity 0.32s ease-in;
+    opacity: 1;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    z-index: 1;
 }
 
 .drop-box-romb4:before {
@@ -1607,30 +1636,48 @@ margin-top:  60px;
     position: absolute;
     border-radius: 5px;
     background-color: #fff;
-    padding: 20px;
+    /*padding: 20px;*/
     border: 1px solid #e6e6e6;
-    display: none;
+    /*display: none;*/
+    opacity: 0;
+    width: 0;
+    height: 0;
     top:49px;
     left: -205px;
-    z-index: 1;
+    z-index: -1;
 }
 .menu-list:hover .drop-box-accoseriese{
     display: flex;
+    transition: opacity 0.32s ease-in;
+    opacity: 1;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    z-index: 1;
 }
 
 .drop-box-featured {
     position: absolute;
     border-radius: 5px;
     background-color: #fff;
-    padding: 20px;
+    /*padding: 20px;*/
     border: 1px solid #e6e6e6;
-    display: none;
+    /*display: none;*/
+    opacity: 0;
+    width: 0;
+    height: 0;
     top:49px;
     left: -320px;
-    z-index: 1;
+    z-index: -1;
 }
 .menu-list:hover .drop-box-featured{
     display: flex;
+    transition: opacity 0.32s ease-in;
+    opacity: 1;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    z-index: 1;
 }
 
 .drop-box-romb5:before {
@@ -1688,6 +1735,7 @@ margin-top:  60px;
 
 
 
+
 .cart-undo-cont {
 /*    width: 35px;*/
     text-align: right;
@@ -1709,3 +1757,4 @@ margin-top:  60px;
     width: 229px;
     text-align: justify;
 }
+
