@@ -1336,7 +1336,7 @@ margin-top:  60px;
     background-color: #fff;
     /*padding: 20px;*/
     /*border: 1px solid #e6e6e6;*/
-    /*display: none;*/
+    display: none;
     top:35px;
     left: 0px;
     opacity: 0;
@@ -1416,7 +1416,7 @@ margin-top:  60px;
     border: 1px solid #eaeaea;
     top:75px;
     left: -15px;
-    /*display: none;*/
+    display: none;
     opacity: 0;
     width: 0;
     height: 0;
@@ -1743,12 +1743,12 @@ margin-top:  60px;
 
 
 
-.cart-undo-cont {
-/*    width: 35px;*/
-    text-align: right;
-    line-height: 85px;
-    margin-left: 25px;
-}
+/*.cart-undo-cont {*/
+/*!*    width: 35px;*!*/
+    /*text-align: right;*/
+    /*line-height: 85px;*/
+    /*margin-left: 25px;*/
+/*}*/
 
 .cart-p {
     margin-top: 5px;

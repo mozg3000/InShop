@@ -10,7 +10,7 @@
   height: 40px
   width: 40px
   transition: opacity 100ms ease-in,fill 100ms ease-in
-  &:hover #cart-chb-svg
+  &:hover .cart-chb-svg
     fill: #f16d7f
   &:hover .drop-box-cart
     display: block
@@ -132,7 +132,7 @@
   width: 263px
   display: none
   justify-content: center
-.add, .add-prod, .add-prod-c,#add-prod-svg,#cart-add-svg
+.add, .add-prod, .add-prod-c,.add-prod-svg,.cart-add-svg
    padding: 14px
    border: 1px solid #ffffff
    color: #ffffff
@@ -147,7 +147,7 @@
     transform: scale(1.025)
 //.add:hover #cart-add-svg
 //  animation: heartbeat 1.5s ease-in-out infinite both
-#cart-add-svg
+.cart-add-svg
   margin-left: 19px
 @keyframes heartbeat
   from
@@ -339,6 +339,8 @@
   padding: 16px 18px
   box-sizing: border-box
   line-height: 13px
+  & i
+    margin-left: 225px
 #shipping-state,#shipping-postcode,#coupon-num
  color: #222222
 #shipping-state::placeholder ,#shipping-postcode::placeholder
@@ -830,3 +832,34 @@
   width: 84px
   font-weight: 700
   text-transform: uppercase
+
+.main-single-header
+  color: #f16d7f
+  display: flex
+  align-items: center
+  flex-direction: column
+  border-bottom: 1px solid #eaeaea
+  width: 147px
+  box-sizing: border-box
+
+.main-single-header:after
+  content: ''
+  display: block
+  background-color: #ef5b70
+  width: 46%
+  height: 3px
+  margin-top: 10px
+  transform: translateY(2px)
+
+.head-main
+  width: 155px
+  margin: auto
+  box-sizing: border-box
+
+.cart-undo-cont
+  text-align: right
+  line-height: 85px
+  margin-left: 25px
+  &_action
+    margin-left: 0
+
